@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Конкурсы и олимпиады ВКМиС — Главная</title>
+    <title>Главная — ВКМиС</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -53,11 +53,6 @@
             background-size: 30px 30px;
             background-position: 0 0, 15px 15px;
         }
-        .reveal-section {
-            opacity: 1;
-            transform: translateY(0);
-            transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
-        }
         .glass-btn {
             border: 1px solid rgba(255, 255, 255, 0.35);
             box-shadow: 0 4px 20px -2px rgba(29, 78, 216, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.4);
@@ -67,10 +62,10 @@
 <body class="font-sans bg-slate-50 dark:bg-slate-900 text-slate-800 dark:text-slate-100 antialiased min-h-screen flex flex-col justify-between selection:bg-brand-500 selection:text-white transition-colors duration-200">
 
     <!-- Шапка сайта -->
-    <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 sticky top-0 z-40">
+    <header class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md border-b border-slate-200/80 dark:border-slate-800 z-40">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <!-- Логотип -->
-            <a href="index.html" class="flex items-center gap-3 group">
+            <a href="index2.html" class="flex items-center gap-3 group">
                 <div class="w-11 h-11 rounded-xl bg-brand-600 flex items-center justify-center text-white font-bold text-xl shadow-md shadow-brand-500/20 group-hover:bg-brand-700 transition-colors">
                     ВК
                 </div>
@@ -81,22 +76,22 @@
             </a>
 
             <!-- Навигация -->
-            <nav class="hidden md:flex items-center gap-8 font-medium text-slate-600 dark:text-slate-300 text-sm">
-                <a href="index.html" class="flex items-center leading-none text-brand-600 dark:text-brand-400 font-semibold transition-colors">Главная</a>
-                <a href="about-olympiads.html" class="flex items-center leading-none hover:text-brand-600 dark:hover:text-brand-400 transition-colors">О олимпиадах</a>
-                <a href="faq.html" class="flex items-center leading-none hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Вопросы и ответы</a>
-                <a href="competitions2.html" class="flex items-center leading-none hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Все конкурсы</a>
-                <a href="contacts.html" class="flex items-center leading-none hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Контакты</a>
+            <nav class="hidden md:flex items-center gap-6 font-medium text-slate-600 dark:text-slate-300 text-xs">
+                <a href="index.html" class="whitespace-nowrap text-brand-600 dark:text-brand-400 font-semibold transition-colors">Главная</a>
+                <a href="about-olympiads.html" class="whitespace-nowrap hover:text-brand-600 dark:hover:text-brand-400 transition-colors">О олимпиадах</a>
+                <a href="faq.html" class="whitespace-nowrap hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Вопросы и ответы</a>
+                <a href="competitions2.html" class="whitespace-nowrap hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Все конкурсы</a>
+                <a href="contacts.html" class="whitespace-nowrap hover:text-brand-600 dark:hover:text-brand-400 transition-colors">Контакты</a>
             </nav>
 
             <!-- Кнопки действия -->
-            <div class="flex items-center gap-3">
+            <div class="flex items-center gap-3 ml-6">
                 <!-- Переключатель темы -->
                 <button id="themeToggle" onclick="toggleTheme()" class="w-10 h-10 rounded-xl border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800 text-slate-600 dark:text-slate-300 hover:bg-slate-200 dark:hover:bg-slate-700 transition-all flex items-center justify-center focus:outline-none" title="Переключить тему">
                     <i id="themeIcon" class="fa-solid fa-moon text-base"></i>
                 </button>
 
-                <a href="competitions2.html" class="hidden sm:inline-flex items-center px-3.5 py-1.5 text-xs font-medium text-white bg-brand-600 hover:bg-brand-700 rounded-lg shadow-sm transition-all hover:shadow glass-btn">
+                <a href="competitions2.html" class="hidden sm:inline-flex items-center px-2.5 py-1 text-[11px] font-medium text-white bg-brand-600 hover:bg-brand-700 rounded-lg shadow-sm transition-all hover:shadow">
                     Смотреть конкурсы
                 </a>
 
@@ -108,29 +103,27 @@
         </div>
     </header>
 
-    <main class="flex-grow flex flex-col justify-center items-center">
+    <main class="flex-grow">
         <!-- Hero Section -->
-        <section class="hero-pattern w-full py-16 sm:py-24 border-b border-slate-200 dark:border-slate-800">
+        <section class="hero-pattern py-16 sm:py-24 border-b border-slate-200 dark:border-slate-800">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <span class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-50 dark:bg-brand-900/40 border border-brand-200 dark:border-brand-700 text-brand-700 dark:text-brand-300 text-xs font-semibold uppercase tracking-wider mb-6">
-                    <i class="fa-solid fa-graduation-cap text-brand-600 dark:text-brand-400"></i> Платформа профессионального роста
+                <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-semibold bg-brand-100 dark:bg-brand-900/50 text-brand-700 dark:text-brand-300 mb-6">
+                    <i class="fa-solid fa-graduation-cap"></i> Платформа олимпиад и конкурсов
                 </span>
-                
-                <h1 class="reveal-section text-4xl sm:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight max-w-4xl mx-auto mb-6">
-                    Раскрой свой потенциал в <span class="text-transparent bg-clip-text bg-gradient-to-r from-brand-600 to-brand-800 dark:from-brand-400 dark:to-brand-200">конкурсах и олимпиадах</span> ВКМиС
+                <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 dark:text-white tracking-tight mb-6">
+                    Раскрой свой потенциал вместе с <span class="text-brand-600 dark:text-brand-400">ВКМиС</span>
                 </h1>
-
-                <p class="reveal-section text-slate-600 dark:text-slate-300 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-normal">
-                    Официальный портал конкурсного движения Волгоградского колледжа машиностроения и связи. Принимайте участие, побеждайте и создавайте своё будущее!
+                <p class="max-w-2xl mx-auto text-base sm:text-lg text-slate-600 dark:text-slate-300 mb-8 leading-relaxed">
+                    Участвуйте в профессиональных олимпиадах по программированию, веб-разработке, машиностроению и сетевым технологиям.
                 </p>
-
-                <div class="reveal-section flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="competitions2.html" class="w-full sm:w-auto px-8 py-4 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-base rounded-xl transition-all shadow-md hover:shadow-lg flex items-center justify-center gap-2 glass-btn">
-                        <span>Перейти к конкурсам</span>
-                        <i class="fa-solid fa-arrow-right text-sm"></i>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="competitions2.html" class="w-full sm:w-auto px-8 py-3.5 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl transition-all shadow-md hover:shadow-lg glass-btn flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-trophy"></i>
+                        <span>Все конкурсы</span>
                     </a>
-                    <a href="about-olympiads.html" class="w-full sm:w-auto px-8 py-4 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-semibold text-base rounded-xl transition-all shadow-sm flex items-center justify-center gap-2">
-                        <span>Узнать об олимпиадах</span>
+                    <a href="about-olympiads.html" class="w-full sm:w-auto px-8 py-3.5 bg-white dark:bg-slate-800 hover:bg-slate-100 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-semibold rounded-xl transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-circle-info"></i>
+                        <span>Узнать больше</span>
                     </a>
                 </div>
             </div>
@@ -161,9 +154,8 @@
                 <div>
                     <h4 class="text-white font-semibold mb-3">Навигация</h4>
                     <ul class="space-y-2 text-sm mb-4">
-                        <li><a href="index.html" class="hover:text-white transition-colors">Главная</a></li>
+                        <li><a href="index2.html" class="hover:text-white transition-colors">Главная</a></li>
                         <li><a href="about-olympiads.html" class="hover:text-white transition-colors">О олимпиадах</a></li>
-                        <li><a href="faq.html" class="hover:text-white transition-colors">Вопросы и ответы</a></li>
                         <li><a href="competitions2.html" class="hover:text-white transition-colors">Все конкурсы</a></li>
                     </ul>
                     <a href="contacts.html" class="inline-flex items-center gap-2 px-4 py-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs rounded-lg transition-all shadow-sm glass-btn">
@@ -202,7 +194,7 @@
             </div>
 
             <nav class="mt-6 flex flex-col gap-2">
-                <a href="index.html" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-slate-800/80 transition-colors">
+                <a href="index2.html" class="flex items-center gap-3 px-4 py-3 rounded-xl font-medium text-brand-600 dark:text-brand-400 bg-brand-50 dark:bg-slate-800/80 transition-colors">
                     <i class="fa-solid fa-house w-5 text-center"></i>
                     <span>Главная</span>
                 </a>
